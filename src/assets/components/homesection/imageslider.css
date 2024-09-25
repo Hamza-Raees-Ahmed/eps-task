@@ -1,0 +1,169 @@
+.slider {
+  position: relative;
+  width: 100vw;
+  height: 100vh;
+  background-size: cover;
+  background-position: center;
+  transition: background-image 1s ease-in-out;
+}
+
+.slider::after {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background: rgba(0, 0, 0, 0.8);
+}
+
+.Home-text-section {
+  width: 100%;
+  text-align: center;
+  position: relative;
+  z-index: 1;
+}
+
+.heading-text h1 {
+  padding-top: 80px;
+  font-size: 75px;
+  color: #ffff;
+  margin-bottom: 20px;
+  font-weight: bold;
+  line-height: 1.08;
+}
+
+.heading-text h3 {
+  font-size: 22px;
+  line-height: 1.2;
+  letter-spacing: 0.5px;
+  color: #ffff;
+  margin-bottom: 20px;
+  font-weight: 300;
+}
+
+.heading-text span {
+  font-size: 50px;
+  margin-left: -20px;
+}
+
+.home-section-btns {
+  display: flex;
+  justify-content: center;
+  gap: 60px;
+  padding-top: 20px;
+  position: relative;
+  z-index: 1;
+}
+
+.btn-1 {
+  position: relative;
+  background: #7f0000;
+  font-size: 20px;
+  text-transform: uppercase;
+  letter-spacing: .5px;
+  display: flex;
+  justify-content: center;
+  padding: 5px;
+  border-radius: 10px;
+  cursor: pointer;
+  padding: 0px 20px 0px 15px;
+  font-size: 14px;
+}
+
+.btn-1 img {
+  margin-top: 13px;
+  width: 28px;
+  height: 28px;
+}
+
+.btn-1 button {
+  padding: 18px;
+  border: none;
+  background-color: #7f0000;
+  color: white;
+  font-weight: 500;
+  font-size: 16px;
+}
+
+.btn-2 {
+  position: relative;
+  letter-spacing: .5px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 5px;
+  border: 1px solid #f70000;
+  border-radius: 10px;
+  padding: 14px 30px;
+}
+
+.btn-2 img {
+  margin-left: 10px;
+  width: 25px;
+  height: 25px;
+}
+
+.btn-2 button {
+  background-color: transparent;
+  border: none;
+  color: white;
+  font-weight: 500;
+  font-size: 16px;
+}
+
+/* Responsive Styles */
+@media (max-width: 768px) {
+  .slider{
+  width: 100%;
+  height: 550px;
+  }
+  .heading-text h1 {
+    font-size: 40px;
+    padding-top: 60px;
+  }
+
+  .heading-text h3 {
+    font-size: 18px;
+  }
+
+  .heading-text span {
+    font-size: 30px;
+  }
+
+  .home-section-btns {
+    flex-direction: row; 
+    gap:  10px;
+  }
+
+  .btn-1, .btn-2 {
+    width: 50%; 
+  }
+
+  .btn-1 button, .btn-2 button {
+    font-size: 17px;
+  }
+}
+
+@media (max-width: 600px) {
+  .heading-text h1 {
+    font-size: 30px;
+    line-height: 36px;
+  }
+
+  .heading-text h3 {
+    font-size: 10px;
+  }
+
+  .heading-text span {
+    font-size: 25px;
+    margin-left: 0px;
+  }
+.btn-1 button{
+  font-size: 13px;
+}
+ 
+  .btn-2{
+    display: none;
+  }
+}

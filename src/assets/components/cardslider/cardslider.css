@@ -1,0 +1,110 @@
+.card-heading {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  margin-bottom: 20px;
+  overflow-x: hidden;
+}
+ .card-heading h1{
+  color: white;
+  position: relative;
+  z-index: 1;
+  font-size: 36px;
+  margin-top: 80px;
+  font-weight:400;
+ }
+
+.cards{
+  position: relative;
+  z-index: 1;
+  margin-right: 50px;
+  margin-left: 40px;
+
+
+ 
+}
+.card-section{
+  background: #fff;
+  height: 260px;
+  border-radius: 10px;
+  transition: .5s ease-in-out;
+  cursor: pointer;
+
+
+}
+.card-section img{
+  width: 15%;
+  height: 15%;
+  margin: 30px auto;
+
+  
+}
+.card-section:hover{
+
+  padding: 20px 0px 20px;
+  height: 300px;
+  border-radius: 10px;
+  transition: .5s ease-in-out;
+ cursor: grab;
+
+
+}
+.card-section:hover .arrow-icons{
+  margin-top: 70px;
+  transform: rotate(180deg);
+  transition: .4s ease-in;
+
+}
+
+
+.card-section h2{
+ text-align: center;
+ font-size: 20px;
+ margin-bottom: 5px;
+}
+.card-section p{
+  text-align: center;
+  font-size: 14px;
+   color: #5c5c5c;
+   font-weight: 500;
+}
+
+.arrow-icons{
+  font-size: 30px;
+  font-weight: bold;
+  display: flex;
+  justify-content: center;
+  margin-top: 20px;
+}
+
+.slick-slide > div{
+  margin: 0 8px;
+
+}
+
+/* tablets screenn */
+@media (max-width: 768px){
+  .card-heading h1{
+    top: -56px;
+  }
+  .cards{
+    top: -50px;
+  
+  }
+ 
+
+
+ 
+}
+/* mobile responsive */
+@media (max-width: 480px) {
+  .card-heading h1{
+    top: -56px;
+  }
+  .cards{
+    top: -50px;
+  
+  }
+ 
+}
