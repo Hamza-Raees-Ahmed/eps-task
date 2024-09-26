@@ -50,30 +50,36 @@ const settings = {
       imgSrc: cardimage1,
       title: 'Hospital System',
       description: 'We are the EEFor and call on Engineer  Engineer for HCAi',
+      description1: 'We are the EEFor and call on Engineer  Engineer for HCAi',
     },
     {
       imgSrc: cardimage2,
       title: 'Healthcare Innovations',
+      description: 'Innovating  HCAi d call on Engineer for HCAi.',
       description: 'Innovating  HCAi d call on Engineer for HCAi.',
     },
     {
       imgSrc: cardimage3,
       title: 'Telemedicine Services',
       description: 'Connecting patients and dl on Engineer for HCAimotely.',
+      description: 'Connecting patients and dl on Engineer for HCAimotely.',
     },
     {
       imgSrc: cardimage4,
       title: 'Medical Research',
+      description: 'Advancinon Engineer for HCAi d call on Engineer for HCAiative research.',
       description: 'Advancinon Engineer for HCAi d call on Engineer for HCAiative research.',
     },
     {
       imgSrc:cardimage5,
       title: 'Patient Management',
       description: 'Streamlining patient care w We are the EEFor and call on Engineer fo.',
+      description: 'Streamlining patient care w We are the EEFor and call on Engineer fo.',
     },
     {
         imgSrc:cardimage6,
         title: 'Patient Management',
+        description: 'Streamlining d call on Engineer for HCAi d call on Engineer for HCAi technology.',
         description: 'Streamlining d call on Engineer for HCAi d call on Engineer for HCAi technology.',
       },
   ];
@@ -91,17 +97,19 @@ const settings = {
       <div className="cards">
        
       <Slider {...settings}>
-        {cards.map((card, index) => (
-          <div className='card-section'>
-            <img className='card-img' src={card.imgSrc} alt={card.title} />
-            <h2>{card.title}</h2>
-            <p className='text-para'>{card.description}</p>
-            <div className='arrow-icons'>
-  <IoIosArrowDown/>
-            </div>
-          </div>
-        ))}
+      {cards.map((card, index) => (
+  <div className='card-section' key={index}>
+    <img className='card-img' src={card.imgSrc} alt={card.title} />
+    <h2>{card.title}</h2>
+    <p className='text-para'>{card.description}</p>
+    <p className='text-para2'>{card.description1}</p>
+    <div className='arrow-icons'>
+    <IoIosArrowDown/>
+    </div>
+  </div>
+))}
               </Slider>
+             
        
       </div>
       

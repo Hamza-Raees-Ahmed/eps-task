@@ -5,53 +5,50 @@ import profileicon from '/public/images/Black-1.png'
 import staricon from '/public/images/Gray.png'
 
 
- const Countersection = () => {
-    const [count, setCount] = useState(0);
-    const targetCount = 500; 
-  
-    useEffect(() => {
+const Countersection = () => {
+  const targets = [500, 200, 50]; // Target counts for each section
+  const [counts, setCounts] = useState([0, 0, 0]); // Initial counts for each section
+
+  useEffect(() => {
+    const intervals = targets.map((target, index) => {
       const increment = () => {
-        setCount((prevCount) => {
-          if (prevCount < targetCount) {
-            return prevCount + 1;
+        setCounts((prevCounts) => {
+          if (prevCounts[index] < target) {
+            return prevCounts.map((count, i) => (i === index ? count + 1 : count));
           } else {
-            clearInterval(intervalId);
-            return prevCount;
+            clearInterval(intervals[index]);
+            return prevCounts;
           }
         });
       };
-  
-      const intervalId = setInterval(increment, 1); 
-  
- 
-      return () => {
-        clearInterval(intervalId);
-      };
-    }, []);
+      
+      return setInterval(increment, 10); 
+    });
+
+    return () => {
+      intervals.forEach(interval => clearInterval(interval)); // Clear all intervals on unmount
+    };
+  }, []);
+
   return (
-    <>
-
-      <div className='counter-section'>
-        <div className='counter-section-left'>
-            <img src={handicon} alt="" />
-            <h1>{count} </h1>
-            <h2>Project Completed</h2>
-        </div>
-        <div className='counter-section-center'>
-            <img src={profileicon} alt="" />
-            <h1> {count} </h1>
-            <h2> Happy Clients</h2>
-        </div>
-
-        <div className='counter-section-right'>
-            <img src={staricon} alt="" />
-            <h1>{count}</h1>
-            <h2>Years In Business</h2>
-        </div>
+    <div className='counter-section'>
+      <div className='counter-section-left'>
+        <img src={handicon} alt="" />
+        <h1>{counts[0]}</h1>
+        <h2>Project Completed</h2>
       </div>
-    </>
-  )
-}
-
+      <div className='counter-section-center'>
+        <img src={profileicon} alt="" />
+        <h1>{counts[1]}</h1>
+        <h2>Happy Clients</h2>
+      </div>
+      <div className='counter-section-right'>
+        <img src={staricon} alt="" />
+        <h1>{counts[2]}</h1>
+        <h2>Years In Business</h2>
+      </div>
+    </div>
+  );
+};
 
 export default Countersection

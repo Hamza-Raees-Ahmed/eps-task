@@ -4,7 +4,6 @@
   align-items: center;
   padding: 15px 30px;
   background-color: white; 
- 
 }
 
 .navbar-left {
@@ -118,6 +117,7 @@
   }
   .list-items {
     display: none; 
+    cursor: pointer;
     flex-direction: column;
     top: 0;
     gap: 0px;
@@ -131,17 +131,19 @@
     font-weight: 600;
     font-family: Montserrat, sans-serif;
     border-bottom: 1px solid gray;
-
+  
     padding: 20px;
   }
-
+  .list-items li:hover{
+    background-color: red;
+    color: white;
+  }
   .navbar-right button {
    display: none;
   }
 
   .list-items.active {
     display: flex; 
-    /* align-items: flex-start; */
   }
 
   .list-items li:hover::after {
@@ -189,7 +191,10 @@
   border-bottom: 1px solid gray;
     padding: 20px;
   }
+  .list-items li:hover{
+    background-color: red;
  
+  }
 
   .navbar-right button {
     display: none; 
@@ -197,7 +202,6 @@
 
   .list-items.active {
     display: flex; 
-    /* align-items: flex-start; */
   }
 
   .list-items li:hover::after {
