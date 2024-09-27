@@ -50,37 +50,37 @@ const settings = {
       imgSrc: cardimage1,
       title: 'Hospital System',
       description: 'We are the EEFor and call on Engineer  Engineer for HCAi',
-      description1: 'We are the EEFor and call on Engineer  Engineer for HCAi',
+      description1: 'Innovating  HCAi d call on Engineer for HCAi.',
     },
     {
       imgSrc: cardimage2,
       title: 'Healthcare Innovations',
       description: 'Innovating  HCAi d call on Engineer for HCAi.',
-      description: 'Innovating  HCAi d call on Engineer for HCAi.',
+      description1: 'Innovating  HCAi d call on Engineer for HCAi.',
     },
     {
       imgSrc: cardimage3,
       title: 'Telemedicine Services',
       description: 'Connecting patients and dl on Engineer for HCAimotely.',
-      description: 'Connecting patients and dl on Engineer for HCAimotely.',
+      description1: 'Innovating  HCAi d call on Engineer for HCAi.',
     },
     {
       imgSrc: cardimage4,
       title: 'Medical Research',
       description: 'Advancinon Engineer for HCAi d call on Engineer for HCAiative research.',
-      description: 'Advancinon Engineer for HCAi d call on Engineer for HCAiative research.',
+      description1: 'Innovating  HCAi d call on Engineer for HCAi.',
     },
     {
       imgSrc:cardimage5,
       title: 'Patient Management',
       description: 'Streamlining patient care w We are the EEFor and call on Engineer fo.',
-      description: 'Streamlining patient care w We are the EEFor and call on Engineer fo.',
+      description1: 'Innovating  HCAi d call on Engineer for HCAi.',
     },
     {
         imgSrc:cardimage6,
         title: 'Patient Management',
         description: 'Streamlining d call on Engineer for HCAi d call on Engineer for HCAi technology.',
-        description: 'Streamlining d call on Engineer for HCAi d call on Engineer for HCAi technology.',
+        description1: 'Innovating  HCAi d call on Engineer for HCAi.',
       },
   ];
 

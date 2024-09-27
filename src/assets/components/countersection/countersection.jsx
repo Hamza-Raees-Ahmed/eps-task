@@ -6,7 +6,7 @@ import staricon from '/public/images/Gray.png'
 
 
 const Countersection = () => {
-  const targets = [500, 200, 50]; // Target counts for each section
+  const targets = [589, 200, 50]; // Target counts for each section
   const [counts, setCounts] = useState([0, 0, 0]); // Initial counts for each section
 
   useEffect(() => {
@@ -32,6 +32,7 @@ const Countersection = () => {
 
   return (
     <div className='counter-section'>
+      <div className='inner-connent'>
       <div className='counter-section-left'>
         <img src={handicon} alt="" />
         <h1>{counts[0]}</h1>
@@ -46,6 +47,7 @@ const Countersection = () => {
         <img src={staricon} alt="" />
         <h1>{counts[2]}</h1>
         <h2>Years In Business</h2>
+      </div>
       </div>
     </div>
   );

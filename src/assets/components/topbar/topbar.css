@@ -50,22 +50,17 @@
 @media (max-width: 768px) {
   .topbar {
       display: flex; 
-      justify-content: space-around;
+      justify-content: space-between;
       
   }
 .topbar-left{
   display: none;
 }
 .topbar-right{
-  display: flex;
-  gap: 110px;
+  width: 100%;
+  justify-content: space-between;
 }
 
-
-  .topbar-right .tele-icon,
-  .topbar-right .mail-icon {
-      margin-left: 20px; 
-  }
 
   .topbar-right svg {
       font-size: 16px; 

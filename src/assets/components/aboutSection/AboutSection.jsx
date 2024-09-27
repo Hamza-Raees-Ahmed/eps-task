@@ -39,12 +39,12 @@ const AboutSection = () => {
             <div className="about-text-section">
               <h1>About Us</h1>
               <p>
-                Exploring new places broadens your horizons and enriches your experiences. Each destination offers unique cultures, flavors, and adventures. Pack your bags, embark on a journey, and create unforgettable memories. <br />
-                Prioritizing your health is essential for a fulfilling life.
+              Electrical Power Systems, Inc. (EPS), is a premier electrical engineering & consulting firm, serving Western United States and California for over 50+ years. We are really good at what we do offering electrical engineering design and construction management services to facility owners, managers, builders, contractors, municipalities, government agencies, A/E firms, and other engineering companies
               </p>
               <div className="socail-imgs">
+              <img src={ncessImg} alt="" />
                 <img src={ieeeImg} alt="" />
-                <img src={ncessImg} alt="" />
+              
               </div>
               <div className="btn">
                 <button>Learn more</button>
@@ -64,7 +64,6 @@ const AboutSection = () => {
                 </button>
             <video className="video-player" controls autoPlay>
               <source src={vedio} type="video/mp4" />
-              Your browser does not support the video tag.
             </video>
           </div>
         </div>

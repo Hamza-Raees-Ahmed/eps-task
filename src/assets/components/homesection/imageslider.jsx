@@ -41,7 +41,7 @@ const ImageSlider = () => {
             <h3>
               EPS is committed to serving our clients by providing the best
               electrical and
-              <br /> process control solutions for current needs and future
+               process control solutions for current needs and future
               demands
             </h3>
           </div>

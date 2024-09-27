@@ -33,12 +33,13 @@
   line-height: 1.08;
 }
 
-.heading-text h3 {
+.paragraph-text h3 {
+  width: 50%;
   font-size: 22px;
   line-height: 1.2;
   letter-spacing: 0.5px;
+ margin: auto;
   color: #ffff;
-  margin-bottom: 20px;
   font-weight: 300;
 }
 
@@ -50,7 +51,7 @@
 .home-section-btns {
   display: flex;
   justify-content: center;
-  gap: 60px;
+  gap: 30px;
   padding-top: 20px;
   position: relative;
   z-index: 1;
@@ -59,7 +60,7 @@
 .btn-1 {
   position: relative;
   background: #7f0000;
-  font-size: 20px;
+  font-size: 10px;
   text-transform: uppercase;
   letter-spacing: .5px;
   display: flex;
@@ -67,18 +68,19 @@
   padding: 5px;
   border-radius: 10px;
   cursor: pointer;
-  padding: 0px 20px 0px 15px;
+  padding: 0px 20px 0px 20px;
   font-size: 14px;
 }
 
 .btn-1 img {
   margin-top: 13px;
-  width: 28px;
-  height: 28px;
+  width: 27px;
+  height: 27px;
+  margin-left: 6px;
 }
 
 .btn-1 button {
-  padding: 18px;
+  padding: 15px;
   border: none;
   background-color: #7f0000;
   color: white;
@@ -94,15 +96,15 @@
   justify-content: center;
   align-items: center;
   gap: 5px;
-  border: 1px solid #f70000;
+  border: 2px solid #7f0000;
   border-radius: 10px;
-  padding: 14px 30px;
+  padding: 16px 30px 13px 20px;
 }
 
 .btn-2 img {
-  margin-left: 10px;
+  margin-left: 20px;
   width: 25px;
-  height: 25px;
+  height: 20px;
 }
 
 .btn-2 button {
@@ -139,7 +141,7 @@
   }
 
   .btn-1, .btn-2 {
-    width: 50%; 
+    width: 40%; 
   }
 
   .btn-1 button, .btn-2 button {
@@ -148,6 +150,10 @@
 }
 
 @media (max-width: 600px) {
+  .slider{
+    width: 100%;
+    height: 400px;
+  }
   .heading-text h1 {
     font-size: 30px;
     line-height: 36px;
@@ -158,11 +164,22 @@
   }
 
   .heading-text span {
-    font-size: 25px;
+    font-size: 19px;
     margin-left: 0px;
   }
-.btn-1 button{
-  font-size: 13px;
+  .paragraph-text h3{
+    width: 70%;
+    margin: auto;
+    font-size: 13px;
+    text-align: center;
+    font-weight: bold;
+  }
+.btn-1 {
+  width: 60%;
+  margin: auto;
+}
+.btn-1 img {
+   margin: auto;
 }
  
   .btn-2{

@@ -123,6 +123,7 @@
     gap: 0px;
     background-color: black;
     width: 417px; 
+
   }
 
   .list-items li {
@@ -131,7 +132,7 @@
     font-weight: 600;
     font-family: Montserrat, sans-serif;
     border-bottom: 1px solid gray;
-  
+
     padding: 20px;
   }
   .list-items li:hover{

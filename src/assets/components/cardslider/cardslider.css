@@ -1,9 +1,8 @@
 .card-heading {
   display: flex;
   justify-content: center;
-  align-items: center;
   text-align: center;
-  margin-bottom: 20px;
+  margin-bottom: 0px;
   overflow-x: hidden;
 }
 .card-heading h1 {
@@ -27,15 +26,19 @@
   border-radius: 10px;
   transition: 0.5s ease-in-out;
   cursor: pointer;
+  margin-top: 30px;
 }
 .card-section img {
   width: 15%;
   height: 15%;
-  margin: 30px auto;
+  margin: 20px auto;
 }
+
 .text-para2 {
   display: none;
-  padding-top: 15px;
+  width: 100%;
+  text-align: center;
+  padding-top: 5px;
   font-size: 12px !important;
 }
 
@@ -45,6 +48,7 @@
   display: flex;
   justify-content: center;
   margin-top: 10px;
+  transition: 0.7s ease-in;
 }
 .card-section:hover {
   padding: 20px 0px 20px;
@@ -54,9 +58,9 @@
   cursor: grab;
 }
 .card-section:hover .arrow-icons {
-  margin-top: 40px;
+  margin-top: 50px;
   transform: rotate(180deg);
-  transition: 0.4s ease-in;
+  transition: 0.5s ease-in;
 }
 .card-section:hover .text-para2 {
   display: block;
@@ -65,13 +69,14 @@
 .card-section h2 {
   text-align: center;
   font-size: 20px;
-  margin-bottom: 5px;
+  padding-bottom: 20px;
 }
 .card-section p {
   text-align: center;
   font-size: 14px;
   color: #5c5c5c;
   font-weight: 500;
+  margin-bottom: 10px;
 }
 
 .slick-slide > div {
@@ -81,21 +86,30 @@
 /* tablets screenn */
 @media (max-width: 768px) {
   .card-heading h1 {
-    top: -56px;
+   font-size: 24px;
+   
   }
   .cards {
-    top: -50px;
+    top: 0px;
   }
 }
-/* mobile responsive */
-/* mobile responsive */
-/* mobile responsive */
+
+
+
+
 /* mobile responsive */
 @media (max-width: 480px) {
-  .card-heading h1 {
-    top: -56px;
-  }
+
   .cards {
     top: -50px;
   }
+  .card-heading h1 {
+    position: relative;
+    top: -50px;
+    font-size: 24px;
+  }
+ .card-slider{
+  position: relative;
+  top: -20px;
+ }
 }
